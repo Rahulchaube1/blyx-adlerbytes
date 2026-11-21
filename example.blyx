@@ -1,0 +1,12 @@
+use adlerbytes;
+
+fn main() {
+    let bytes = [65, 66];
+    let result = adlerbytes_digest(bytes);
+    if len(result) == 0 { println!("invalid"); return; }
+    let mut i = 0;
+    while i < len(result) {
+        println!(at(result, i));
+        i += 1;
+    }
+}
